@@ -1,0 +1,642 @@
+@font-face {
+    /*font-family: 'Neue Machina';
+    src: url('https://fonts.cdnfonts.com/css/neue-machina') format('woff2');
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    /*font-family: 'Neue Machina', sans-serif;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    perspective: 1000px;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.quantum-waves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.3;
+    background:
+        radial-gradient(circle at 20% 30%,
+            rgba(255, 255, 255, 0.1) 0%,
+            transparent 50%),
+        radial-gradient(circle at 80% 70%,
+            rgba(255, 255, 255, 0.1) 0%,
+            transparent 50%);
+    animation: wave-pulse 15s infinite alternate;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes wave-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.2;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.4;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.binary-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.05;
+    background-image:
+        linear-gradient(transparent 95%, rgba(255, 255, 255, 0.1) 100%);
+    background-size: 100% 1.5em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    color: white;
+    white-space: pre;
+    overflow: hidden;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.hologram-card {
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(15px);
+    border-radius: 2px;
+    padding: 3rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    animation: hologram-float 8s ease-in-out infinite;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes hologram-float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotateX(0deg) rotateY(0deg);
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    50% {
+        transform: translateY(-15px) rotateX(2deg) rotateY(2deg);
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.hologram-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent);
+    animation: scanline 4s linear infinite;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes scanline {
+    0% {
+        top: 0;
+        opacity: 0;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    5% {
+        opacity: 1;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    95% {
+        opacity: 1;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.hologram-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background:
+        radial-gradient(circle,
+            rgba(255, 255, 255, 0.05) 0%,
+            transparent 70%);
+    animation: rotate 20s linear infinite;
+    z-index: -1;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    to {
+        transform: rotate(360deg);
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.profile-img-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 2rem;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.1),
+        inset 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateZ(30px);
+    filter: grayscale(100%) contrast(120%);
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.profile-img:hover {
+    transform: translateZ(50px) rotateY(10deg);
+    box-shadow:
+        0 0 30px rgba(255, 255, 255, 0.3),
+        inset 0 0 30px rgba(255, 255, 255, 0.2);
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.profile-img-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: pulse 3s ease-in-out infinite alternate;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.3;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    100% {
+        transform: scale(1.05);
+        opacity: 0.1;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+h1:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    transform-style: preserve-3d;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(20px);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0);
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    z-index: -1;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.social-link:hover {
+    transform: translateZ(40px) scale(1.1);
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.2),
+        inset 0 0 10px rgba(255, 255, 255, 0.1);
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.social-link:hover::before {
+    transform: scale(1);
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.space-element {
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+    transform-style: preserve-3d;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.tesseract {
+    width: 120px;
+    height: 120px;
+    top: 20%;
+    left: 15%;
+    animation: tesseract-spin 20s linear infinite;
+    opacity: 0.1;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes tesseract-spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    100% {
+        transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg);
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.wireframe-sphere {
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    right: 10%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: sphere-rotate 30s linear infinite;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes sphere-rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skills-section {
+    margin: 2rem 0;
+    width: 100%;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skills-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skills-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    padding: 1rem 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skill i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skill span {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skill:hover {
+    transform: translateZ(20px) scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skill[data-skill="HTML"]:hover i {
+    color: #e34f26;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skill[data-skill="CSS"]:hover i {
+    color: #2965f1;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skill[data-skill="JavaScript"]:hover i {
+    color: #f7df1e;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+.skill[data-skill="TypeScript"]:hover i {
+    color: #3178c6;
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        gap: 1rem;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    .skill {
+        width: 70px;
+        padding: 0.8rem 0.3rem;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    .skill i {
+        font-size: 1.8rem;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .hologram-card {
+        padding: 2rem 1.5rem;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    h1 {
+        font-size: 2rem;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    .title {
+        font-size: 1rem;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    .profile-img-container {
+        width: 140px;
+        height: 140px;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+
+    .tesseract,
+    .wireframe-sphere {
+        display: none;
+    */
+font-family: 'Orbitron', sans-serif;
+}
+*/
+font-family: 'Orbitron', sans-serif;
+}
